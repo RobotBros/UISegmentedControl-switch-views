@@ -37,10 +37,8 @@
     // Set the new controllers as the navi view controllers
     NSArray<UIViewController*> *theControllers = [NSArray arrayWithObject:incomingViewController];
     [self.navigationController setViewControllers:theControllers animated:NO];
-    // Replace the segmented control to the incoming view
+    // Insert the segmented control to the incoming view
     incomingViewController.navigationItem.titleView = segmentedControl;
-    //UIView *segment = [incomingViewController.view viewWithTag:1];
-    //[segment addSubview:segmentedControl];
 }
 
 @end

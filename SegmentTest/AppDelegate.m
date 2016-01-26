@@ -10,6 +10,7 @@
 #import "SegmentControl.h"
 #import "ViewController.h"
 #import "ViewController2.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface AppDelegate ()
 
@@ -27,7 +28,6 @@
             viewControllers:viewControllers];
     self.uiSegmentedControl = [[UISegmentedControl alloc] initWithItems:[viewControllers valueForKey:@"title"]];
     [self.uiSegmentedControl addTarget:self.segmentControl action:@selector(segmentedControlIndexDidChanged:) forControlEvents:UIControlEventValueChanged];
-    
     [self firstExperience];
     
     //[self.window addSubview:navigationController.view];
